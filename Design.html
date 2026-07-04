@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>EmoTrack AI:Real Time Human Emotion Monitoring System</title>
+
+    <style>
+        body {
+            background-image: url("{{ url_for('static', filename='Poster.png') }}");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between; /* pushes button to bottom */
+            align-items: center;
+        }
+
+        h1 {
+            margin-top: 40px;
+            color: white;
+            font-size: 40px;
+            font-weight: bold;
+        }
+
+        .start-btn {
+            margin-bottom: 50px;
+            padding: 20px 40px;
+            font-size: 22px;
+            border-radius: 12px;
+            border: none;
+            cursor: pointer;
+            background-color: rgba(0,0,0,0.6);
+            color: white;
+            transition: 0.3s;
+        }
+
+        .start-btn:hover {
+            background-color: rgba(255,255,255,0.8);
+            color: black;
+        }
+    </style>
+</head>
+<body>
+<! -- Main Heading -->
+    <h1> Welcome To My Project</h1>
+
+    <form action="/run_cv" method="POST" style="text-align: left;">
+    <button type="submit" class="start-btn">Start Detection</button>
+</form>
+
+</body>
+</html>

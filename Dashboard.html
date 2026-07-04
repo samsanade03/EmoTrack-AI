@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+</head>
+<body style="text-align:center;margin-top:100px;">
+
+<h1>Welcome {{ session['user'] }}</h1>
+
+<form action="/run_cv" method="POST">
+    <button style="padding:15px 30px;font-size:20px;">
+        Start Detection
+    </button>
+</form>
+
+<br><br>
+<a href="/logout">Logout</a>
+
+</body>
+</html>
